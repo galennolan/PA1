@@ -44,3 +44,7 @@ Route::post('tampiltiket', 'DasarController@tampiltiket');
 
 Route::resource('mahasiswa','MahasiswaController');
 Route::get('/mahasiswa/hapus/{id}','MahasiswaController@destroy');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
